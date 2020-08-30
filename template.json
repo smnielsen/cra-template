@@ -1,0 +1,40 @@
+{
+  "package": {
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.11.0",
+      "@testing-library/react": "^10.4.3",
+      "@smnielsen/cover-my-ass": "^0.0.4",
+      "@smnielsen/eslint-config": "^0.4.1",
+      "@smnielsen/prettier-config": "^0.1.0",
+      "eslint-config-prettier": "^6.11.0",
+      "history": "^5.0.0",
+      "husky": "^4.2.5",
+      "lint-staged": "^10.2.11",
+      "prettier": "^2.1.1",
+      "web-vitals": "^0.2.4"    
+    },
+    "scripts": {
+      "test:ci": "react-scripts test --watchAll=false",
+      "eslint": "eslint --ext js,jsx,ts,tsx .",
+      "prettier": "prettier --check \"./**/*.+(js|jsx|ts|tsx|json|md)\"",
+      "lint": "yarn run eslint && yarn run prettier",
+      "lint:fix": "yarn run eslint --fix && yarn run prettier --write",
+      "compliance": "cover-my-ass",
+      "ci": "yarn compliance && yarn lint && yarn test:ci"
+    },
+    "license": "MIT",
+    "lint-staged": {
+      "**/*.{js,jsx,ts,tsx,vue}": [
+        "yarn run lint:fix"
+      ],
+      "**/*.{md,scss,css,json}": [
+        "yarn run prettier --write"
+      ]
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    }
+  }
+}

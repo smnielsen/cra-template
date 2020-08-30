@@ -1,0 +1,26 @@
+{
+  "name": "@smnielsen/cra-template",
+  "version": "0.0.1",
+  "keywords": [
+    "react",
+    "cra-template-smn",
+    "template"
+  ],
+  "main": "template.json",
+  "license": "MIT",
+  "description": "SMNielsen default template for create-react-app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smnielsen/cra-template-smn.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/smnielsen/cra-template-smn/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
