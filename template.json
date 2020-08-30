@@ -11,6 +11,7 @@
       "husky": "^4.2.5",
       "lint-staged": "^10.2.11",
       "prettier": "^2.1.1",
+      "react-router-dom": "^6.0.0-beta.0",
       "web-vitals": "^0.2.4"    
     },
     "scripts": {

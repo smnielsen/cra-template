@@ -11,13 +11,13 @@
   "description": "SMNielsen default template for create-react-app.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smnielsen/cra-template-smn.git"
+    "url": "https://github.com/smnielsen/cra-template.git"
   },
   "engines": {
     "node": ">=10"
   },
   "bugs": {
-    "url": "https://github.com/smnielsen/cra-template-smn/issues"
+    "url": "https://github.com/smnielsen/cra-template/issues"
   },
   "files": [
     "template",
